@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action=" " onsubmit="funsubmit()">
+        Your Email Please :<input type="email" id="input" onfocus="fun()"  onblur="blured()">
+        <input type="submit">
+    </form>
+
+    <script>
+        let input=document.getElementById("input");
+        
+        function fun(){
+            input.style.backgroundColor="red";
+
+        }
+
+
+        function blured(){
+            input.style.backgroundColor="grey";
+        }
+        function funsubmit(){
+            alert("Congratulations, you submitted '" + input.value + "'");
+
+
+
+        }
+    </script>
+</body>
+</html>
